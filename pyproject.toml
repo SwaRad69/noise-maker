@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "camera-noise-collector"
+version = "0.2.0"
+description = "Traceable collection and analysis of processed webcam noise"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24,<2.3",
+    "opencv-python>=4.8,<5",
+    "matplotlib>=3.8,<4",
+    "scipy>=1.10,<2",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.4"]
+quantum = [
+    "qiskit>=1.0,<2",
+    "qiskit-aer>=0.13",
+]
+all = [
+    "camera-noise-collector[test,quantum]",
+]
+
+[project.scripts]
+camera-noise = "camera_noise.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

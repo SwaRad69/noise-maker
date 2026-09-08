@@ -1,0 +1,341 @@
+{
+  "backends": [
+    {
+      "actual_backend_name": null,
+      "api_preference": 700,
+      "backend": "dshow",
+      "controls": [],
+      "default_mode": null,
+      "discovered_modes": [],
+      "failure": "VideoCapture.isOpened() remained false after 8 isolated attempts",
+      "failure_stage": "open",
+      "limitations": [
+        "Camera 0 could not be opened through dshow; no stream/control claims were inferred."
+      ],
+      "mode_negotiation_tests": [],
+      "open_attempts": [
+        {
+          "attempt": 1,
+          "elapsed_seconds": 0.14379,
+          "exception": null,
+          "opened": false
+        },
+        {
+          "attempt": 2,
+          "elapsed_seconds": 0.026711,
+          "exception": null,
+          "opened": false
+        },
+        {
+          "attempt": 3,
+          "elapsed_seconds": 0.024899,
+          "exception": null,
+          "opened": false
+        },
+        {
+          "attempt": 4,
+          "elapsed_seconds": 0.027277,
+          "exception": null,
+          "opened": false
+        },
+        {
+          "attempt": 5,
+          "elapsed_seconds": 0.023146,
+          "exception": null,
+          "opened": false
+        },
+        {
+          "attempt": 6,
+          "elapsed_seconds": 0.023436,
+          "exception": null,
+          "opened": false
+        },
+        {
+          "attempt": 7,
+          "elapsed_seconds": 0.027395,
+          "exception": null,
+          "opened": false
+        },
+        {
+          "attempt": 8,
+          "elapsed_seconds": 0.027007,
+          "exception": null,
+          "opened": false
+        }
+      ],
+      "opencv_backend_compiled": true,
+      "opened": false,
+      "status": "open_failed",
+      "validation_results": []
+    },
+    {
+      "actual_backend_name": null,
+      "api_preference": 1400,
+      "backend": "msmf",
+      "controls": [],
+      "default_mode": null,
+      "discovered_modes": [],
+      "failure": "VideoCapture.isOpened() remained false after 8 isolated attempts",
+      "failure_stage": "open",
+      "limitations": [
+        "Camera 0 could not be opened through msmf; no stream/control claims were inferred."
+      ],
+      "mode_negotiation_tests": [],
+      "open_attempts": [
+        {
+          "attempt": 1,
+          "elapsed_seconds": 0.113857,
+          "exception": null,
+          "opened": false
+        },
+        {
+          "attempt": 2,
+          "elapsed_seconds": 0.084456,
+          "exception": null,
+          "opened": false
+        },
+        {
+          "attempt": 3,
+          "elapsed_seconds": 0.090937,
+          "exception": null,
+          "opened": false
+        },
+        {
+          "attempt": 4,
+          "elapsed_seconds": 0.084816,
+          "exception": null,
+          "opened": false
+        },
+        {
+          "attempt": 5,
+          "elapsed_seconds": 0.094435,
+          "exception": null,
+          "opened": false
+        },
+        {
+          "attempt": 6,
+          "elapsed_seconds": 0.088839,
+          "exception": null,
+          "opened": false
+        },
+        {
+          "attempt": 7,
+          "elapsed_seconds": 0.085225,
+          "exception": null,
+          "opened": false
+        },
+        {
+          "attempt": 8,
+          "elapsed_seconds": 0.081955,
+          "exception": null,
+          "opened": false
+        }
+      ],
+      "opencv_backend_compiled": true,
+      "opened": false,
+      "status": "open_failed",
+      "validation_results": []
+    }
+  ],
+  "candidate_ranking": [],
+  "conclusion": {
+    "answer": "The available interfaces do not provide enough information to determine the processing level",
+    "category": "D",
+    "explanation": "No tested backend produced an honored mode, so this run cannot characterize the accessible stream.",
+    "hardware_raw_support_statement": "This does not establish whether the camera hardware, proprietary software, firmware, or an undocumented interface supports RAW.",
+    "raw_bayer_exposed": false,
+    "raw_bayer_statement": "RAW/Bayer access was not exposed through the tested interface.",
+    "recommended_mode": null
+  },
+  "device": {
+    "camera_index": 0,
+    "hardware": {
+      "camera_privacy_consent": {
+        "current_user": null,
+        "local_machine": "Allow"
+      },
+      "devices": [
+        {
+          "config_flags": 0,
+          "driver_date": "8-11-2025",
+          "driver_description": "Integrated Camera",
+          "driver_inf": "oem47.inf",
+          "driver_provider": "Realtek",
+          "driver_registry_reference": "{ca3e7ab9-b4c3-4ae6-8251-579ef933890f}\\0000",
+          "driver_version": "10.0.22000.20384",
+          "instance_id": "USB\\VID_04F2&PID_B828&MI_00\\7&17eca250&0&0000",
+          "manufacturer": "Realtek",
+          "name": "Integrated Camera",
+          "present": true
+        }
+      ],
+      "limitations": [],
+      "selected": {
+        "config_flags": 0,
+        "driver_date": "8-11-2025",
+        "driver_description": "Integrated Camera",
+        "driver_inf": "oem47.inf",
+        "driver_provider": "Realtek",
+        "driver_registry_reference": "{ca3e7ab9-b4c3-4ae6-8251-579ef933890f}\\0000",
+        "driver_version": "10.0.22000.20384",
+        "instance_id": "USB\\VID_04F2&PID_B828&MI_00\\7&17eca250&0&0000",
+        "manufacturer": "Realtek",
+        "name": "Integrated Camera",
+        "present": true
+      },
+      "source": "Windows registry camera enumeration (read-only)"
+    },
+    "requested_identifier": null,
+    "requested_name": null
+  },
+  "environment": {
+    "opencv": "4.14.0",
+    "opencv_videoio_backends": [
+      "FFMPEG",
+      "GSTREAMER",
+      "INTEL_MFX",
+      "MSMF",
+      "MSMF",
+      "DSHOW",
+      "FFMPEG",
+      "CV_IMAGES",
+      "CV_MJPEG",
+      "UEYE",
+      "OBSENSOR"
+    ],
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.7"
+  },
+  "generated_utc": "2026-08-30T19:40:04.868796+05:30",
+  "highest_accessible_reported_component_bit_depth": null,
+  "historical_project_evidence": [
+    {
+      "backend": "DSHOW",
+      "camera_id": 0,
+      "exposure": -8.0,
+      "fourcc": "YUY2",
+      "fps": 0.0,
+      "gain": -1.0,
+      "height": 720,
+      "session": "experiments\\dark-exposure-001",
+      "status": "complete",
+      "valid_frame_count": 300,
+      "width": 1280
+    },
+    {
+      "backend": "DSHOW",
+      "camera_id": 0,
+      "exposure": -6.0,
+      "fourcc": "YUY2",
+      "fps": 0.0,
+      "gain": -1.0,
+      "height": 720,
+      "session": "experiments\\dark-exposure-002",
+      "status": "complete",
+      "valid_frame_count": 300,
+      "width": 1280
+    },
+    {
+      "backend": "DSHOW",
+      "camera_id": 0,
+      "exposure": -5.0,
+      "fourcc": "YUY2",
+      "fps": 0.0,
+      "gain": -1.0,
+      "height": 720,
+      "session": "experiments\\dark-exposure-003",
+      "status": "complete",
+      "valid_frame_count": 300,
+      "width": 1280
+    },
+    {
+      "backend": "DSHOW",
+      "camera_id": 0,
+      "exposure": -4.0,
+      "fourcc": "YUY2",
+      "fps": 0.0,
+      "gain": -1.0,
+      "height": 720,
+      "session": "experiments\\dark-exposure-004",
+      "status": "complete",
+      "valid_frame_count": 300,
+      "width": 1280
+    },
+    {
+      "backend": "DSHOW",
+      "camera_id": 0,
+      "exposure": -3.0,
+      "fourcc": "YUY2",
+      "fps": 0.0,
+      "gain": -1.0,
+      "height": 720,
+      "session": "experiments\\dark-exposure-005",
+      "status": "complete",
+      "valid_frame_count": 300,
+      "width": 1280
+    }
+  ],
+  "next_experiments": {
+    "primary": "Restore Camera 0 access, then verify the previously successful DirectShow configuration 1280x720 YUY2 at exposure -3.0. Rerun capability discovery before starting a new noise experiment.",
+    "secondary": [
+      "Compare the best uncompressed mode with the best compressed mode at matched exposure, gain, resolution, and FPS.",
+      "Investigate manufacturer-specific tools or documented extension controls only if they explicitly expose RAW/Bayer or higher-bit-depth streams."
+    ]
+  },
+  "probe_configuration": {
+    "backends": [
+      "dshow",
+      "msmf"
+    ],
+    "camera_id": 0,
+    "device_identifier": null,
+    "device_name": null,
+    "frame_rates": [
+      30.0
+    ],
+    "max_validation_modes_per_backend": 2,
+    "open_attempts": 8,
+    "open_retry_delay_seconds": 1.0,
+    "output_dir": ".",
+    "pixel_formats": [
+      "YUY2"
+    ],
+    "read_attempts": 5,
+    "read_retry_delay_seconds": 0.1,
+    "release_settle_seconds": 0.15,
+    "resolutions": [
+      [
+        640,
+        480
+      ]
+    ],
+    "validation_frames": 5,
+    "warmup_frames": 2
+  },
+  "purpose": "Camera capability and format discovery; no entropy analysis was performed.",
+  "schema_version": 1,
+  "scientific_interpretation": {
+    "conceptual_pipeline": [
+      "sensor",
+      "analog electronics",
+      "ADC",
+      "ISP",
+      "firmware",
+      "USB",
+      "Windows driver/backend",
+      "application"
+    ],
+    "directly_observed": "Only backend opens, property readbacks, requested-versus-actual modes, delivered arrays, and tiny-frame comparisons.",
+    "does_not_mean": "It does not prove raw sensor measurements, ISP bypass, sensor-level access, true randomness, quantum randomness, or cryptographic security.",
+    "meaning": "An honored uncompressed format means software can receive an uncompressed representation through that interface."
+  },
+  "unknowns_and_limitations": [
+    "OpenCV does not expose native DirectShow/Media Foundation control min/max/step/default metadata.",
+    "The active mode probe covers the configured resolution/FPS/FOURCC grid, not every vendor-specific media type.",
+    "An observed YUV/RGB stream does not reveal which ISP, denoising, temporal filtering, tone mapping, or firmware stages ran.",
+    "Internal ADC/sensor bit depth cannot be inferred from the application stream bit depth.",
+    "Proprietary manufacturer software, undocumented extension controls, firmware interfaces, and hardware-specific methods were not tested.",
+    "A tiny validation capture can reveal obvious repetition but cannot establish long-term buffering or temporal-filter behavior.",
+    "When Windows detects a started camera but OpenCV cannot open it, this layer cannot distinguish a physical/e-shutter, exclusive use, or a driver/runtime failure."
+  ]
+}

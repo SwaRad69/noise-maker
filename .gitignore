@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+experiments/
+
+# Temporary test directories
+.test-tmp*/
+
+# Large binary / data files
+*.yuv
+*.npy
+*.npz
+
+# OS / Editor artifacts
+.DS_Store
+Thumbs.db
+*.swp
