@@ -1,5 +1,13 @@
 # PROJECT DOCUMENTATION — `noise maker`
 
+Before you read the following stuff- tldr;
+- The main purpose of building / trying this project was to achieve absolute randomness using real physical noise which i beleive was true randomness which can be used for simulators and shi for simulating real life hardware.
+- I would be trying to build this using different methods.
+- this was built using my laptop sensor, which i was not able to properly access the noisy part of the camera sensors.
+- I will be trying more stuff for this in the coming future using different types sensors and the noise.
+- ggz 
+
+
 **Single-source documentation, architecture reference, experiment history,
 scientific rationale, failure analysis, post-mortem, and repository guide.**
 
